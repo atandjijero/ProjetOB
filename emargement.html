@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Faites l'émargemnt!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .container { max-width: 500px; margin-top: 50px; }
+        .shadow { background: white; padding: 20px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Marquez votre présence!</h2>
+        <form action="emargement.php" method="POST" class="shadow p-4">
+            <div class="mb-3">
+                <label for="id_enseignant" class="form-label">Votre Identifiant</label>
+                <input type="number" class="form-control" id="id_enseignant" name="id_enseignant" required>
+            </div>
+            <div class="mb-3">
+                <label for="id_cours" class="form-label">Identifiant du Cours</label>
+                <input type="number" class="form-control" id="id_cours" name="id_cours" required>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Valider l'émargement</button>
+        </form>
+    </div>
+</body>
+</html>
