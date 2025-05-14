@@ -11,7 +11,7 @@ if ($_SESSION["role"] != "administrateur") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Espace administrateur</title>
+    <title>Espace administrateur</title>s
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
@@ -27,8 +27,7 @@ if ($_SESSION["role"] != "administrateur") {
                 <a href="enseignant.html" class="btn btn-success">Ajouter un Enseignant</a>
                 <a href="planing.html" class="btn btn-info">Gérer le Planning</a>
                 <a href="exporter.php" class="btn btn-warning">Exporter Présences en PDF</a>
-                <a href="supprimer.php" class="btn btn-danger">Supprimer un Enseignant</a>
-                <a href="modifier.php" class="btn btn-secondary">Modifier un Enseignant</a>
+                <a href="afficherEnseignant.php" class="btn btn-danger">Voir les enseignants ajoutés</a>
             </div>
         </div>
         <div class="card-footer text-muted">
